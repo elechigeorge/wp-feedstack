@@ -6,5 +6,8 @@
         "allow-plugins": {
             "composer/installers": true
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     }
 }
