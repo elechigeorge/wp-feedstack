@@ -1,0 +1,180 @@
+/* Styles for the Feedback Form */
+.feedstack-feedback-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 40px; /* Move the form to the right end of the page */
+  transform: translateY(-50%);
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  z-index: 9999;
+  width: 300px;
+  max-height: 300px; /* Limit the height to fit small size */
+  overflow: auto; /* Enable vertical scrolling if needed */
+}
+
+/* feedstack styles begins */
+
+/* feedstack styled ends */
+
+/* Styles for the rating selection */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.star-btn {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 30px; /* Increase font size to enlarge the stars */
+  padding: 0;
+  margin: 0;
+  outline: none; /* Remove the default focus outline */
+}
+
+.star-btn:before {
+  content: '\2605'; /* Unicode character for a star */
+  color: #000;
+}
+
+.rating input[type="radio"] {
+  display: none; /* Hide the default radio buttons */
+}
+
+.rating input[type="radio"]:checked ~ label.star-btn:before {
+  content: "\2605";
+  color: #000; 
+}
+
+.rating label.star-btn:not(:checked):before {
+  content: "\2606"; /* Default star outline (☆) */
+  color: #ddd; /* Default color for outlined stars (e.g., gray) */
+}
+
+/* Show the form when the show-feedback-form class is applied */
+.show-feedback-form {
+  display: block;
+}
+
+/* Styles for the steps */
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+/* Styles for the progress buttons */
+
+
+/* Styles for the active progress button */
+.progress-btn.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Styles for the control buttons */
+.form-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.feedstack-toggle-button {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 10px 8px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  z-index: 10000;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Adjust the button rotation to make it horizontally inclined */
+.feedstack-toggle-button {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.feedstack-toggle-button:hover {
+  background-color: #222;
+  color:#fff;
+}
+
+.feedstack-toggle-button-disable {
+  display: none;
+}
+
+.feedstack-feedback-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.form-group button {
+  background-color: #000;
+}
+
+.form-group button:hover {
+  background-color: #333;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Show the form when the feedback button is clicked */
+.show-feedback-form .feedstack-feedback-form {
+  display: block;
+}
+
+.feedstack-dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .feedstack-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .feedstack-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .feedstack-table th,
+  .feedstack-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+

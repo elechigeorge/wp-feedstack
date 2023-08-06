@@ -1,0 +1,62 @@
+body{
+  margin-top:20px;
+  background:#FAFAFA;
+}
+.order-card {
+  color: #333;
+}
+
+
+
+/* .card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+  box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+  border: none;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+} */
+
+/* Custom CSS for enhanced styling */
+.card {
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+  /* background: linear-gradient(180deg, #d7dce6 0%, gray 100%); */
+  background-color: #f3f3f3;
+  border: none; /* Remove card border */
+  border-radius: 10px; /* Rounded corners */
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+
+.card .card-block {
+  padding: 10px;
+}
+
+.order-card i {
+  font-size: 30px;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+/* tab styles start */
+.nav-item .nav-link {
+  background-color: transparent;
+  color: gray;
+}
+
+.nav-item .nav-link.active {
+  background-color: transparent;
+  color: #000;
+}
